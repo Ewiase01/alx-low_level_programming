@@ -7,24 +7,21 @@
 int main(void)
 
 {
-	long int a, b, c, sum;
+	int x;
+	unsigned long a = 0, b = 1, sum;
 
-	a = 1;
-	b = 2;
-
-	for (a = 1; a <= 50; ++a)
+	for (x = 0; x < 50; x++)
 	{
-		if (b != 20365011074)
-		{
-			printf("%ld, ", b);
-		}
+		sum = a + b;
+		printf("%lu", sum);
+
+		a = b;
+		b = sum;
+
+		if (x == 49)
+			printf("\n");
 		else
-		{
-			printf("%ld\n", b);
-		}
-		sum  = b + c;
-		b = c;
-		c = sum;
+			printf(",");
 	}
 	return (0);
 }
