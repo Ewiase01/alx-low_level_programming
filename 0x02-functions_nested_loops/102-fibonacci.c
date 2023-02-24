@@ -4,24 +4,24 @@
  * main - print the first 50 Fibonacci numbers
  * Return: Always 0.
  */
+
 int main(void)
 
 {
-	int x;
-	long int a = 0, b = 1, d;
+	int a = 0;
+	long b = 1, c = 2;
 
-	for (x = 0; x < 50; x++)
+	while (a < 50)
 	{
-		d = a + b;
-		printf("%lu", d);
-
-		a = b;
-		b = d;
-
-		if (x == 49)
-			printf("\n");
+		if (a == 0)
+			printf("%ld", b);
+		else if (a == 1)
+			printf(", %ld", c);
 		else
-			printf(",");
+		{
+			printf(", %ld", c);
+		}
 	}
-	return (0);
+		printf("\n");
+		return (0);
 }
