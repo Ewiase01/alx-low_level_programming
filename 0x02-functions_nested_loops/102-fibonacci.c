@@ -19,8 +19,11 @@ int main(void)
 			printf(", %ld", c);
 		else
 		{
+			c += b;
+			b = c - b;
 			printf(", %ld", c);
 		}
+		++a;
 	}
 		printf("\n");
 		return (0);
