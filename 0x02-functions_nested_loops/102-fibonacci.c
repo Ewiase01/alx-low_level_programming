@@ -8,15 +8,15 @@ int main(void)
 
 {
 	int x;
-	unsigned long a = 0, b = 1, sum;
+	long int a = 0, b = 1, d;
 
 	for (x = 0; x < 50; x++)
 	{
-		sum = a + b;
-		printf("%lu", sum);
+		d = a + b;
+		printf("%lu", d);
 
 		a = b;
-		b = sum;
+		b = d;
 
 		if (x == 49)
 			printf("\n");
