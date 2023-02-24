@@ -6,7 +6,9 @@
  */
 int main(void)
 {
-	int x, y = 0;
+	int x, y;
+
+	y = 0;
 
 	while (x < 1024)
 	{
@@ -17,6 +19,6 @@ int main(void)
 			}
 		x++;
 	}
-	printf("%d\n"), y);
+	printf("%d\n", y);
 	return (0);
 }
