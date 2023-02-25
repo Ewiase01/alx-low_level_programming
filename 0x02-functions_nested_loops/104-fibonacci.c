@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - find andprint the first 98 Fibonacci numbers
+ * main - Finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and2,
+ * followed by a new line.
  *
- * Retrun: Always 0.
+ * Return: Always 0.
  */
 
 int main(void)
@@ -36,7 +38,7 @@ int main(void)
 		}
 		printf("%lu%lu", i, j);
 		if (a != 98)
-			printf(",");
+			printf(", ");
 		e = g;
 		f = h;
 		g = i;
