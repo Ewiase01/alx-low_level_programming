@@ -7,8 +7,6 @@
  *
  * @n: the number of elements of the array to be printed
  * @a: name of the array
- *
- * Return: Always 0
  */
 
 void print_array(int *a, int n)
@@ -18,10 +16,10 @@ void print_array(int *a, int n)
 	for (x = 0; x < n; x++)
 	{
 		printf("%d", a[x]);
-	}
-	if (x != (n - 1))
-	{
+		if (x != (n - 1))
+		{
 		printf(", ");
+		}
 	}
 	printf("\n");
 }
