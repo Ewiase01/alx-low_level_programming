@@ -13,8 +13,8 @@ char *rot13(char *c)
 {
 	int x;
 	int y;
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char b[] = "NOPQRSTUVWXYZABCDEGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (x = 0; c[x] != '\0'; x++)
 	{
