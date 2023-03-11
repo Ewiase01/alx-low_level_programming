@@ -12,31 +12,31 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b, c, d;
+	int a, b, c;
 	int x[] = {25, 10, 5, 2, 1};
 
-	a = b = c = d = 0;
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	b = atoi(argv[1]);
-	if (b <= 0)
+	a = atoi(argv[1]);
+	c = 0;
+
+	if (a < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	while (x[a] != '\0')
+
+	for (b = 0; b < 5 && a >= 0; b++)
 	{
-		if (b >= x[a])
+		while (a >= x[b])
 		{
-			d = (b / x[a]);
-			c += d;
-			b -= x[a] * d;
+			c++;
+			a -= x[b];
 		}
-		b++;
 	}
 	printf("%d\n", c);
 	return (0);
