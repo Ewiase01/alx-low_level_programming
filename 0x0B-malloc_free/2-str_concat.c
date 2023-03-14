@@ -4,8 +4,8 @@
 /**
  * *str_concat - concatenates two strings
  *
- * @s1 - the first character to concatenate
- * @s2 - the second character to concatenate
+ * @s1: the first character to concatenate
+ * @s2: the second character to concatenate
  *
  * Return: concatenated strings on succes,
  * NULL failure
