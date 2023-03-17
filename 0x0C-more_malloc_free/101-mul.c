@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
 	if (x == NULL)
 		printf("Error\n"), exit(98);
 	x = _initialize_array(x, c);
-	h = c - 1, f = a - 1, g = 2 - 1, i = e = 0;
+	h = c - 1, f = a - 1, g = b - 1, i = e = 0;
 	for (; h >= 0; h--, f--)
 	{
 		if (f < 0)
