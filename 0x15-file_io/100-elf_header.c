@@ -47,15 +47,15 @@ void check_elf(unsigned char *e_ident)
  */
 void print_magic(unsigned char *e_ident)
 {
-	int i;
+	int x;
 
 	printf("Mafic: ");
 
-	for (i = 0; i < EI_NIDENT; i++)
+	for (x = 0; x < EI_NIDENT; x++)
 	{
-		printf("%02x", e_ident[i]);
+		printf("%02x", e_ident[x]);
 
-		if (i == EI_NIDENT - 1)
+		if (x == EI_NIDENT - 1)
 			printf("\n");
 		else
 			printf(" ");
@@ -113,7 +113,7 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- * print_version - rints the version of an ELF header
+ * print_version - prints the version of an ELF header
  *
  * @e_ident: A pointer to an array containing the ELF version
  */
