@@ -5,6 +5,9 @@
 /**
  * main - check the code
  *
+ * @ac: argument count
+ * @av: array of the integers
+ *
  * Return: Always 0.
  */
 int main(int ac, char **av)
